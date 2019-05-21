@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		630DA973229432D900E27785 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630DA972229432D900E27785 /* AppDelegate.swift */; };
+		630DA975229432D900E27785 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630DA974229432D900E27785 /* ViewController.swift */; };
+		630DA978229432D900E27785 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630DA976229432D900E27785 /* Main.storyboard */; };
+		630DA988229432DB00E27785 /* ikev2vpnConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630DA987229432DB00E27785 /* ikev2vpnConnectionTests.swift */; };
+		630DA993229432DB00E27785 /* ikev2vpnConnectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630DA992229432DB00E27785 /* ikev2vpnConnectionUITests.swift */; };
+		630DA9A3229433AE00E27785 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630DA9A0229433AE00E27785 /* KeychainService.swift */; };
+		630DA9A4229433AE00E27785 /* loginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630DA9A1229433AE00E27785 /* loginData.swift */; };
+		630DA9A5229433AE00E27785 /* Vpn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630DA9A2229433AE00E27785 /* Vpn.swift */; };
+		630DA9A8229433D900E27785 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630DA9A7229433D900E27785 /* Status.swift */; };
+		630DA9AB229435BE00E27785 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 630DA9AA229435BE00E27785 /* NetworkExtension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		630DA984229432DB00E27785 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 630DA967229432D900E27785 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 630DA96E229432D900E27785;
+			remoteInfo = ikev2vpnConnection;
+		};
+		630DA98F229432DB00E27785 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 630DA967229432D900E27785 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 630DA96E229432D900E27785;
+			remoteInfo = ikev2vpnConnection;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		630DA96F229432D900E27785 /* ikev2vpnConnection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ikev2vpnConnection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		630DA972229432D900E27785 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		630DA974229432D900E27785 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		630DA977229432D900E27785 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		630DA97E229432DB00E27785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		630DA983229432DB00E27785 /* ikev2vpnConnectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ikev2vpnConnectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		630DA987229432DB00E27785 /* ikev2vpnConnectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ikev2vpnConnectionTests.swift; sourceTree = "<group>"; };
+		630DA989229432DB00E27785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		630DA98E229432DB00E27785 /* ikev2vpnConnectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ikev2vpnConnectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		630DA992229432DB00E27785 /* ikev2vpnConnectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ikev2vpnConnectionUITests.swift; sourceTree = "<group>"; };
+		630DA994229432DB00E27785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		630DA9A0229433AE00E27785 /* KeychainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		630DA9A1229433AE00E27785 /* loginData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginData.swift; sourceTree = "<group>"; };
+		630DA9A2229433AE00E27785 /* Vpn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vpn.swift; sourceTree = "<group>"; };
+		630DA9A7229433D900E27785 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		630DA9AA229435BE00E27785 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		630DA9AC229435BE00E27785 /* ikev2vpnConnection.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ikev2vpnConnection.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		630DA96C229432D900E27785 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630DA9AB229435BE00E27785 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630DA980229432DB00E27785 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630DA98B229432DB00E27785 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		630DA966229432D900E27785 = {
+			isa = PBXGroup;
+			children = (
+				630DA971229432D900E27785 /* ikev2vpnConnection */,
+				630DA986229432DB00E27785 /* ikev2vpnConnectionTests */,
+				630DA991229432DB00E27785 /* ikev2vpnConnectionUITests */,
+				630DA970229432D900E27785 /* Products */,
+				630DA9A9229435BE00E27785 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		630DA970229432D900E27785 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				630DA96F229432D900E27785 /* ikev2vpnConnection.app */,
+				630DA983229432DB00E27785 /* ikev2vpnConnectionTests.xctest */,
+				630DA98E229432DB00E27785 /* ikev2vpnConnectionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		630DA971229432D900E27785 /* ikev2vpnConnection */ = {
+			isa = PBXGroup;
+			children = (
+				630DA9AC229435BE00E27785 /* ikev2vpnConnection.entitlements */,
+				630DA972229432D900E27785 /* AppDelegate.swift */,
+				630DA974229432D900E27785 /* ViewController.swift */,
+				630DA9A6229433B700E27785 /* New Group */,
+				630DA976229432D900E27785 /* Main.storyboard */,
+				630DA97E229432DB00E27785 /* Info.plist */,
+			);
+			path = ikev2vpnConnection;
+			sourceTree = "<group>";
+		};
+		630DA986229432DB00E27785 /* ikev2vpnConnectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				630DA987229432DB00E27785 /* ikev2vpnConnectionTests.swift */,
+				630DA989229432DB00E27785 /* Info.plist */,
+			);
+			path = ikev2vpnConnectionTests;
+			sourceTree = "<group>";
+		};
+		630DA991229432DB00E27785 /* ikev2vpnConnectionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				630DA992229432DB00E27785 /* ikev2vpnConnectionUITests.swift */,
+				630DA994229432DB00E27785 /* Info.plist */,
+			);
+			path = ikev2vpnConnectionUITests;
+			sourceTree = "<group>";
+		};
+		630DA9A6229433B700E27785 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				630DA9A0229433AE00E27785 /* KeychainService.swift */,
+				630DA9A1229433AE00E27785 /* loginData.swift */,
+				630DA9A2229433AE00E27785 /* Vpn.swift */,
+				630DA9A7229433D900E27785 /* Status.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		630DA9A9229435BE00E27785 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				630DA9AA229435BE00E27785 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		630DA96E229432D900E27785 /* ikev2vpnConnection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 630DA997229432DB00E27785 /* Build configuration list for PBXNativeTarget "ikev2vpnConnection" */;
+			buildPhases = (
+				630DA96B229432D900E27785 /* Sources */,
+				630DA96C229432D900E27785 /* Frameworks */,
+				630DA96D229432D900E27785 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ikev2vpnConnection;
+			productName = ikev2vpnConnection;
+			productReference = 630DA96F229432D900E27785 /* ikev2vpnConnection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		630DA982229432DB00E27785 /* ikev2vpnConnectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 630DA99A229432DB00E27785 /* Build configuration list for PBXNativeTarget "ikev2vpnConnectionTests" */;
+			buildPhases = (
+				630DA97F229432DB00E27785 /* Sources */,
+				630DA980229432DB00E27785 /* Frameworks */,
+				630DA981229432DB00E27785 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				630DA985229432DB00E27785 /* PBXTargetDependency */,
+			);
+			name = ikev2vpnConnectionTests;
+			productName = ikev2vpnConnectionTests;
+			productReference = 630DA983229432DB00E27785 /* ikev2vpnConnectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		630DA98D229432DB00E27785 /* ikev2vpnConnectionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 630DA99D229432DB00E27785 /* Build configuration list for PBXNativeTarget "ikev2vpnConnectionUITests" */;
+			buildPhases = (
+				630DA98A229432DB00E27785 /* Sources */,
+				630DA98B229432DB00E27785 /* Frameworks */,
+				630DA98C229432DB00E27785 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				630DA990229432DB00E27785 /* PBXTargetDependency */,
+			);
+			name = ikev2vpnConnectionUITests;
+			productName = ikev2vpnConnectionUITests;
+			productReference = 630DA98E229432DB00E27785 /* ikev2vpnConnectionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		630DA967229432D900E27785 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "jyoti ranjan swain";
+				TargetAttributes = {
+					630DA96E229432D900E27785 = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
+					};
+					630DA982229432DB00E27785 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 630DA96E229432D900E27785;
+					};
+					630DA98D229432DB00E27785 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 630DA96E229432D900E27785;
+					};
+				};
+			};
+			buildConfigurationList = 630DA96A229432D900E27785 /* Build configuration list for PBXProject "ikev2vpnConnection" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 630DA966229432D900E27785;
+			productRefGroup = 630DA970229432D900E27785 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				630DA96E229432D900E27785 /* ikev2vpnConnection */,
+				630DA982229432DB00E27785 /* ikev2vpnConnectionTests */,
+				630DA98D229432DB00E27785 /* ikev2vpnConnectionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		630DA96D229432D900E27785 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630DA978229432D900E27785 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630DA981229432DB00E27785 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630DA98C229432DB00E27785 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		630DA96B229432D900E27785 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630DA975229432D900E27785 /* ViewController.swift in Sources */,
+				630DA9A5229433AE00E27785 /* Vpn.swift in Sources */,
+				630DA9A4229433AE00E27785 /* loginData.swift in Sources */,
+				630DA973229432D900E27785 /* AppDelegate.swift in Sources */,
+				630DA9A3229433AE00E27785 /* KeychainService.swift in Sources */,
+				630DA9A8229433D900E27785 /* Status.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630DA97F229432DB00E27785 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630DA988229432DB00E27785 /* ikev2vpnConnectionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630DA98A229432DB00E27785 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630DA993229432DB00E27785 /* ikev2vpnConnectionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		630DA985229432DB00E27785 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 630DA96E229432D900E27785 /* ikev2vpnConnection */;
+			targetProxy = 630DA984229432DB00E27785 /* PBXContainerItemProxy */;
+		};
+		630DA990229432DB00E27785 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 630DA96E229432D900E27785 /* ikev2vpnConnection */;
+			targetProxy = 630DA98F229432DB00E27785 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		630DA976229432D900E27785 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				630DA977229432D900E27785 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		630DA995229432DB00E27785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		630DA996229432DB00E27785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		630DA998229432DB00E27785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ikev2vpnConnection/ikev2vpnConnection.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53A3BSFWCY;
+				INFOPLIST_FILE = ikev2vpnConnection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dvlp-jrs.ikev2vpnConnections";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		630DA999229432DB00E27785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ikev2vpnConnection/ikev2vpnConnection.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53A3BSFWCY;
+				INFOPLIST_FILE = ikev2vpnConnection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dvlp-jrs.ikev2vpnConnections";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		630DA99B229432DB00E27785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55WPLTX7TB;
+				INFOPLIST_FILE = ikev2vpnConnectionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jrsworld.co.ikev2vpnConnectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ikev2vpnConnection.app/ikev2vpnConnection";
+			};
+			name = Debug;
+		};
+		630DA99C229432DB00E27785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55WPLTX7TB;
+				INFOPLIST_FILE = ikev2vpnConnectionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jrsworld.co.ikev2vpnConnectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ikev2vpnConnection.app/ikev2vpnConnection";
+			};
+			name = Release;
+		};
+		630DA99E229432DB00E27785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55WPLTX7TB;
+				INFOPLIST_FILE = ikev2vpnConnectionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jrsworld.co.ikev2vpnConnectionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ikev2vpnConnection;
+			};
+			name = Debug;
+		};
+		630DA99F229432DB00E27785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55WPLTX7TB;
+				INFOPLIST_FILE = ikev2vpnConnectionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jrsworld.co.ikev2vpnConnectionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ikev2vpnConnection;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		630DA96A229432D900E27785 /* Build configuration list for PBXProject "ikev2vpnConnection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630DA995229432DB00E27785 /* Debug */,
+				630DA996229432DB00E27785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		630DA997229432DB00E27785 /* Build configuration list for PBXNativeTarget "ikev2vpnConnection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630DA998229432DB00E27785 /* Debug */,
+				630DA999229432DB00E27785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		630DA99A229432DB00E27785 /* Build configuration list for PBXNativeTarget "ikev2vpnConnectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630DA99B229432DB00E27785 /* Debug */,
+				630DA99C229432DB00E27785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		630DA99D229432DB00E27785 /* Build configuration list for PBXNativeTarget "ikev2vpnConnectionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630DA99E229432DB00E27785 /* Debug */,
+				630DA99F229432DB00E27785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 630DA967229432D900E27785 /* Project object */;
+}
